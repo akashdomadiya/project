@@ -29,7 +29,8 @@ const Navbar = () => {
 
                                     <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" className="nav-link active"
+                                            <NavLink 
+                                            className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')}
                                                 aria-current="page"
                                                 to="/"
                                             >
@@ -37,15 +38,15 @@ const Navbar = () => {
                                             </NavLink>
                                         </li>
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" className="nav-link" to="/contact">Contact</NavLink>
+                                            <NavLink className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')} to="/contact">Contact</NavLink>
                                         </li>
 
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" className="nav-link" to="/service">Services</NavLink>
+                                            <NavLink className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')} to="/service">Services</NavLink>
                                         </li>
 
                                         <li className="nav-item">
-                                            <NavLink activeClassName="menu_active" className="nav-link" to="/about">About</NavLink>
+                                            <NavLink className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')} to="/about">About</NavLink>
                                         </li>
                                     </ul>
                                 </div>
