@@ -20,10 +20,11 @@ const Contact = () => {
 
 
 
+
   const formSubmit = (e) => {
     e.preventDefault();
     alert(
-      `My name is ${data.fullname}.My mobile number is ${data.Phone}, and email is ${data.email}, Here is what I want to say ${data.msg}`)
+      `My name is ${data.Fullname}.My mobile number is ${data.Phone}, and email is ${data.email}, Here is what I want to say ${data.msg}`)
   };
   return (
     <>
@@ -45,11 +46,11 @@ const Contact = () => {
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="exampleFormControlInput3" name="Email" onChange={InputEvent} placeholder="name@example.com" />
+                <input type="email" className="form-control" id="exampleFormControlInput3" name="email" onChange={InputEvent} placeholder="name@example.com" />
               </div>
               <div className="mb-3">
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
-                <textarea className="form-control" id="exampleFormControlTextarea4" name="Message"onChange={InputEvent} rows="3"></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea4" name="msg"onChange={InputEvent} rows="3"></textarea>
               </div>
               <div className="col-12">
                 <button className="btn-outline-primary" type="submit">Submit form</button>
