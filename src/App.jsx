@@ -8,6 +8,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
 import { Routes, Route, Navigate } from 'react-router-dom'
+import Footer from "./Footer";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Home />} />
       </Routes>
+      <Footer></Footer>
       
     </>
   );
