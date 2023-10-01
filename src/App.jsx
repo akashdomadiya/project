@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Footer from "./Footer";
+import Inquiry from "./Inquiry";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/service' element={<Service />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/inquiry' element={<Inquiry />} />
         <Route path='*' element={<Home />} />
       </Routes>
       <Footer></Footer>

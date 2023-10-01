@@ -48,6 +48,9 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <NavLink className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')} to="/about">About</NavLink>
                                         </li>
+                                        <li className="nav-item">
+                                            <NavLink className={(navData) => (navData.isActive ? "nav-link menu_active" : 'nav-link')} to="/inquiry">Inquiry</NavLink>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
